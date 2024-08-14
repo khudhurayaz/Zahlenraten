@@ -7,7 +7,7 @@ Ein einfaches Projekt, bei dem der Benutzer eine Zahl erraten soll. Es gibt die 
 + `git clone https://github.com/khudhurayaz/CPP_Zahlenraten.git`
 
 ## Ausführbare Datei herunterladen
-+ Laden Sie die `.exe`-Datei [hier](Zahlenraten) herunter.
++ Laden Sie die `.exe`-Datei [hier](App) herunter.
 
 ## Spiel unter Windows starten
 + Doppelklicken Sie auf die App.exe-Datei.
