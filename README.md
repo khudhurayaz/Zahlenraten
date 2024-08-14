@@ -7,7 +7,7 @@ Ein einfaches Projekt, bei dem der Benutzer eine Zahl erraten soll. Es gibt die 
 + `git clone https://github.com/khudhurayaz/CPP_Zahlenraten.git`
 
 ## Ausführbare Datei herunterladen
-+ Laden Sie die `.exe`-Datei [hier](www.google.de) herunter.
++ Laden Sie die `.exe`-Datei [hier](Zahlenraten.exe) herunter.
 
 ## Spiel unter Windows starten
 + Doppelklicken Sie auf die App.exe-Datei.
@@ -16,3 +16,18 @@ Ein einfaches Projekt, bei dem der Benutzer eine Zahl erraten soll. Es gibt die 
 + Starten Sie Ihr Terminal.
 + Navigieren Sie zum CPP_Zahlenraten-Ordner.
 + Mit dem Befehl `./App` können Sie das Spiel starten.
+
+## Spielstart
+![userinput](images/username-input.png "Benutzername Eingabe")
+
+## Menü
+![menue](images/menu.png "Spiel Menü")
+
+## Das Spielfeld
+![game](images/Game.png "Spielbereich")
+
+## Optionen
+![option](images/option-input.png "Optionen")
+
+## Schwierigkeit der Level ändern
+![change level](images/change-level.png "Option Level ändern")

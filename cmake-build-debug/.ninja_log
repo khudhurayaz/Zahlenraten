@@ -1,3 +1,7 @@
 # ninja log v6
-0	908	1723637395695021224	CMakeFiles/Zahlenraten.dir/App.cpp.o	bec9499041e59c1a
-908	1013	1723637396604041002	Zahlenraten	ea5d7b63c03ddd98
+3	725	1723638272421364286	CMakeFiles/Zahlenraten.dir/App.cpp.o	f21fc6d03ac003fd
+726	871	1723638273144360668	Zahlenraten	c4fd8abc16c0c633
+1	6	1723638246318510563	clean	938627c0ca55d49
+4	121	1723638432049072346	/home/khudhur/CLionProjects/Zahlenraten/Zahlenraten	bf1ed17a3fc92262
+4	843	1723639150226321976	CMakeFiles/Zahlenraten.dir/App.cpp.o	f21fc6d03ac003fd
+843	1010	1723639151064333317	/home/khudhur/CLionProjects/Zahlenraten/Zahlenraten	bf1ed17a3fc92262

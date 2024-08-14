@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_Zahlenraten: phony || .
 
 build CMakeFiles/Zahlenraten.dir/App.cpp.o: CXX_COMPILER__Zahlenraten_unscanned_Debug /home/khudhur/CLionProjects/Zahlenraten/App.cpp || cmake_object_order_depends_target_Zahlenraten
   DEP_FILE = CMakeFiles/Zahlenraten.dir/App.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -static-libstdc++ -static-libgcc -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/Zahlenraten.dir
   OBJECT_FILE_DIR = CMakeFiles/Zahlenraten.dir
 
@@ -61,14 +61,14 @@ build CMakeFiles/Zahlenraten.dir/App.cpp.o: CXX_COMPILER__Zahlenraten_unscanned_
 
 
 #############################################
-# Link the executable Zahlenraten
+# Link the executable /home/khudhur/CLionProjects/Zahlenraten/Zahlenraten
 
-build Zahlenraten: CXX_EXECUTABLE_LINKER__Zahlenraten_Debug CMakeFiles/Zahlenraten.dir/App.cpp.o
-  FLAGS = -g
+build /home/khudhur/CLionProjects/Zahlenraten/Zahlenraten: CXX_EXECUTABLE_LINKER__Zahlenraten_Debug CMakeFiles/Zahlenraten.dir/App.cpp.o
+  FLAGS = -static-libstdc++ -static-libgcc -g
   OBJECT_DIR = CMakeFiles/Zahlenraten.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = Zahlenraten
+  TARGET_FILE = /home/khudhur/CLionProjects/Zahlenraten/Zahlenraten
   TARGET_PDB = Zahlenraten.dbg
 
 
@@ -97,6 +97,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build Zahlenraten: phony /home/khudhur/CLionProjects/Zahlenraten/Zahlenraten
+
 # =============================================================================
 # Folder targets.
 
@@ -105,7 +107,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/khudhur/CLionProjects/Zahlenraten/cmake-build-debug
 
-build all: phony Zahlenraten
+build all: phony /home/khudhur/CLionProjects/Zahlenraten/Zahlenraten
 
 # =============================================================================
 # Built-in targets

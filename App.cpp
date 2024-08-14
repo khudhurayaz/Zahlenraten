@@ -63,12 +63,12 @@ void spiel()
     int guessNumber;
     int randomNumber;
     int versuche;
-    int levelSchwerigkeit = level * 10;
+    int levelSchwierigkeit = level * 10;
 
     // Erzeuge einen Zufallsgenerator
     std::random_device rd;  // Seed für den Zufallsgenerator
     std::mt19937 gen(rd()); // Standard-Mersenne-Twister-Generator
-    std::uniform_int_distribution<> distrib(1, levelSchwerigkeit); // Bereich von 1 bis der user sein level gewählt hat oder standard (1 - 10)
+    std::uniform_int_distribution<> distrib(1, levelSchwierigkeit); // Bereich von 1 bis der user sein level gewählt hat oder standard (1 - 10)
 
     // Generiere eine zufällige Zahl
     randomNumber = distrib(gen);
@@ -77,7 +77,7 @@ void spiel()
     cout << "Spiel wird gestartet!" << endl;
     while(weiter != 1) 
     {
-        cout << "Suche den Zahl zwischen 1 bis " << levelSchwerigkeit << "!" << endl; 
+        cout << "Suche den Zahl zwischen 1 bis " << levelSchwierigkeit<< "!" << endl;
         cout << "Dein Zahl: ";
         cin >> guessNumber;
 
@@ -117,7 +117,7 @@ void optionen()
     do 
     {
         cout << "########## OPTIONEN ##########" << endl;
-        cout << "1. Schwerigkeit" << endl;
+        cout << "1. Schwierigkeit" << endl;
         cout << "2. About" << endl;
         cout << "3. Menü" << endl;
         cout << "Wähle eine Option: ";

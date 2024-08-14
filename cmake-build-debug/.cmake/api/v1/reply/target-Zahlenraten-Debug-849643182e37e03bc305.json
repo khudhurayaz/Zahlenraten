@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Zahlenraten"
+			"path" : "/home/khudhur/CLionProjects/Zahlenraten/Zahlenraten"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -35,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : " -static-libstdc++ -static-libgcc -g -fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -59,7 +59,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-static-libstdc++ -static-libgcc -g",
 				"role" : "flags"
 			},
 			{
