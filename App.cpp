@@ -5,7 +5,7 @@
 using namespace std;
 string username;
 int level = 1;
-int highscor;
+static int highscore;
 
 void intro();
 void spiel();
@@ -15,6 +15,7 @@ void clear(int);
 int schwierigkeit();
 void about();
 int eingabePruefen();
+int bonus(int level, int versuche);
 
 int main()
 {
@@ -86,9 +87,17 @@ void spiel()
         if (guessNumber == randomNumber)
         {
             clear();
-            cout << "Sie haben gewonnen!" << endl;
-            cout << "Sehr schön '" << username << "'\n";
-            cout << "Sie haben mit " << versuche << " Versuchen gewonnen!" << endl;
+            cout << "Du hast Gewonnen!!!!" << endl;
+            cout << "Du hast mit " << versuche << " Versuchen gewonnen!" << endl;
+            int bonusRechner = bonus(level, versuche);
+
+            if (highscore < bonusRechner) {
+                cout << "Glückwunsch, du hast deinen Highscore geknackt! Punkte: " << bonusRechner << endl;
+                highscore = bonusRechner;
+            }else if (bonusRechner != -1) {
+                cout << "Bonus: " << bonusRechner << endl;
+            }
+
             versuche = 0;
             weiter = 1;
         }
@@ -172,6 +181,50 @@ void about()
     cout << "Erstellt von Ayaz Khudhur." << endl;
     clear(1);
 }
+
+int berechneBonus(int bonusPunkte, int versuche)
+{
+    int versucheRechnung = versuche * 10;
+    if (bonusPunkte - versucheRechnung > 0) {
+        bonusPunkte = bonusPunkte - versucheRechnung;
+    }
+    return bonusPunkte;
+}
+
+int bonus(int level, int versuche)
+{
+    int bonusPunkte[11];
+    bonusPunkte[0] = 50;
+    bonusPunkte[1] = 100;
+    bonusPunkte[2] = 200;
+    bonusPunkte[3] = 300;
+    bonusPunkte[4] = 450;
+    bonusPunkte[5] = 600;
+    bonusPunkte[6] = 850;
+    bonusPunkte[7] = 1100;
+    bonusPunkte[8] = 1450;
+    bonusPunkte[9] = 1850;
+    bonusPunkte[10] = 2300;
+
+    if (level >= 1 && level <= 2) {
+        return berechneBonus((bonusPunkte[0] + bonusPunkte[1]) * level, versuche);
+    }
+    if (level >= 3 && level <= 4) {
+        return berechneBonus((bonusPunkte[2] + bonusPunkte[3]) * level, versuche);
+    }
+    if (level >= 5 && level <= 6) {
+        return berechneBonus((bonusPunkte[4] + bonusPunkte[5]) * level, versuche);
+    }
+    if (level >= 7 && level <= 8) {
+        return  berechneBonus((bonusPunkte[6] + bonusPunkte[7]) * level, versuche);
+    }
+    if (level >= 9 && level <= 10) {
+        return  berechneBonus((bonusPunkte[8] + bonusPunkte[9]) * level, versuche);
+    }
+
+    return -1;
+}
+
 
 int eingabePruefen() 
 {
