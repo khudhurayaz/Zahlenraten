@@ -7,12 +7,13 @@ Ein einfaches Projekt, bei dem der Benutzer eine Zahl erraten soll. Es gibt die 
 + `git clone https://github.com/khudhurayaz/CPP_Zahlenraten.git`
 
 ## Ausführbare Datei herunterladen
-+ Laden Sie die `.exe`-Datei [hier](App) herunter.
++ Laden Sie die Datei [hier](App) herunter.
 
 ## Spiel unter Windows starten
 + Doppelklicken Sie auf die App.exe-Datei.
 
 ## Spiel unter Ubuntu starten
++ Laden Sie die `.out`-Datei [hier](App.out) herunter.
 + Starten Sie Ihr Terminal.
 + Navigieren Sie zum CPP_Zahlenraten-Ordner.
 + Mit dem Befehl `./App` können Sie das Spiel starten.
