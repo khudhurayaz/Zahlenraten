@@ -15,7 +15,8 @@ Ein einfaches Projekt, bei dem der Benutzer eine Zahl erraten soll. Es gibt die 
 ## Spiel unter Ubuntu starten
 + Laden Sie die `.out`-Datei [hier](App.out) herunter.
 + Starten Sie Ihr Terminal.
-+ Navigieren Sie zum CPP_Zahlenraten-Ordner.
++ Navigieren Sie zum Zahlenraten-Ordner oder zur heruntergeladenen `.out`-Datei..
++ Rechtsklick -> Eigenschaften -> Als Programm ausführbar -> Aktivieren
 + Mit dem Befehl `./App` können Sie das Spiel starten.
 
 ## Spielstart
