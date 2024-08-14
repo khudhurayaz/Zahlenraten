@@ -12,7 +12,7 @@ void spiel();
 void optionen();
 void clear();
 void clear(int);
-int schwerigkeit();
+int schwierigkeit();
 void about();
 int eingabePruefen();
 
@@ -42,8 +42,6 @@ int main()
             default: cout << "Kein treffer!" << endl; break;
         }
     }
-
-    return 0;
 }
 
 void intro() 
@@ -60,9 +58,8 @@ void spiel()
 {
     clear(2);
 
-    int guessNumber;
-    int randomNumber;
-    int versuche;
+    int guessNumber = 0;
+    int versuche = 0;
     int levelSchwierigkeit = level * 10;
 
     // Erzeuge einen Zufallsgenerator
@@ -71,7 +68,7 @@ void spiel()
     std::uniform_int_distribution<> distrib(1, levelSchwierigkeit); // Bereich von 1 bis der user sein level gewählt hat oder standard (1 - 10)
 
     // Generiere eine zufällige Zahl
-    randomNumber = distrib(gen);
+    int randomNumber = distrib(gen);
 
     int weiter = 0;
     cout << "Spiel wird gestartet!" << endl;
@@ -131,7 +128,7 @@ void optionen()
 
         switch(cChoice)
         {
-            case 1: level = schwerigkeit(); break;
+            case 1: level = schwierigkeit(); break;
             case 2: about(); break;
             case 3: weiter = 0; break;
             default: cout << "Bitte eine gültige auswahl treffen!" << endl;
@@ -141,14 +138,14 @@ void optionen()
     clear(1);
 }
 
-int schwerigkeit()
+int schwierigkeit()
 {
     clear(2);
     int schwerigkeit;
     do 
     {
         cout << "Zahl zwischen 1 und 10 eingeben!" << endl;
-        cout << "Schwerigkeit: ";
+        cout << "Schwierigkeit: ";
         cin >> schwerigkeit;
 
         if (eingabePruefen() != 0)
@@ -163,7 +160,7 @@ int schwerigkeit()
         }
     } while(schwerigkeit <= 0 || schwerigkeit > 10);
 
-    cout << "Der Schwerigkeitgerade wurde auf " << schwerigkeit << " erhöht!" << endl;
+    cout << "Der Schwierigkeitgerade wurde auf " << schwerigkeit << " erhöht!" << endl;
     clear(1);
     return schwerigkeit;
 }
