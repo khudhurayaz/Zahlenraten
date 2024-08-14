@@ -1,0 +1,3 @@
+/home/khudhur/CLionProjects/Zahlenraten/cmake-build-debug/CMakeFiles/Zahlenraten.dir
+/home/khudhur/CLionProjects/Zahlenraten/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/khudhur/CLionProjects/Zahlenraten/cmake-build-debug/CMakeFiles/rebuild_cache.dir
